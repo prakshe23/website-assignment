@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Why, How, and What of Making Online Images Accessible, IU Indianapolis</title>
+<style>
+
+  body{
+    margin: 0;
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  a{ color: #990000; }
+  a:focus-visible{ outline: 2px solid #990000; outline-offset: 2px; }
+
+  .skip-link{
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #990000;
+    color: #fff;
+    padding: 8px 14px;
+  }
+  .skip-link:focus{ left: 8px; top: 8px; }
+
+  header.top{
+    background: #990000;
+    color: #ffffff;
+    border-bottom: 3px solid #6d0808;
+    padding: 0 20px;
+  }
+  .top-inner{
+    width: 100%;
+    min-height: 68px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .top-inner p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+  .university-name{
+    font-weight: 700;
+    flex: 0 0 auto;
+  }
+  .unit-name{
+    margin-left: auto;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  main{ max-width: 700px; margin: 0 auto; padding: 24px 20px 10px; }
+
+  h1{
+    color: #990000;
+    font-size: 30px;
+    margin: 10px 0 14px;
+  }
+
+  h2{
+    color: #990000;
+    font-size: 22px;
+    margin: 34px 0 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+
+  p{ margin: 0 0 16px; }
+
+  figure{ margin: 20px 0; }
+  figure img{ max-width: 100%; height: auto; display: block; }
+  figcaption{ font-size: 15px; color: #444; margin-top: 6px; }
+
+  .examples,
+  blockquote{
+    margin: 22px 0;
+    padding: 12px 16px;
+    border-left: 3px solid #990000;
+    background: #fafafa;
+  }
+  .examples p{ margin: 0 0 6px; }
+  .examples p:last-child{ margin-bottom: 0; }
+  .examples .bad{ color: #7a1f1f; }
+  .examples .good{ color: #24522a; }
+
+  ul, .practices{ margin: 0 0 18px; padding-left: 28px; }
+  li{ margin-bottom: 10px; }
+
+  dl{ margin: 0 0 24px; }
+  dt{ font-weight: 700; margin-top: 14px; }
+  dd{ margin: 4px 0 0; }
+
+  blockquote p:last-child{ margin-bottom: 0; }
+
+  .btn{
+    display: inline-block;
+    background: #990000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  .btn:hover{ background: #7a0000; }
+
+
+  footer.site{
+    background: #990000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  header.top a,
+  footer.site a{
+    color: #ffffff;
+  }
+
+  @media (max-width: 760px){
+    .top-inner{
+      min-height: 0;
+      padding: 12px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .unit-name{
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 480px){
+    h1{ font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="top-inner">
+    <p class="university-name">Indiana University Indianapolis</p>
+    <p class="unit-name">Division of Student Affairs, Office of Communications and Digital Strategy</p>
+  </div>
+</header>
+
+<main id="main">
+
+  <h1>The Why, How, and What of Making Online Images Accessible</h1>
+
+  <p>A recent review of Division of Student Affairs webpages found a lack of alt text on images. Alt text is a description added to an image to explain its content. It is the first step to web accessibility, and here is your quick guide to using it.</p>
+
+  <figure>
+    <img src="./website-image.png" alt="Chancellor Paydar and a student dance on a colorful lit dance floor at the IUPUI Birthday Bash">
+    <figcaption>Chancellor Paydar and students at the IUPUI Birthday Bash.</figcaption>
+  </figure>
+
+  <div class="examples">
+    <p class="bad"><strong>Poor alt text:</strong> "IUPUI Jaguars know how to have fun on the dance floor."</p>
+    <p class="good"><strong>Good alt text:</strong> "Chancellor Paydar and a student dance on a colorful dance floor at IUPUI Birthday Bash."</p>
+  </div>
+
+  <h2>Why is alt text important?</h2>
+  <p>We get it, it can be tough to keep track of every best practice in the digital space. But alt text pays off in a few concrete ways.</p>
+
+  <dl>
+    <dt>Accessibility</dt>
+    <dd>Alt text lets your website communicate with people who have disabilities or limited vision by describing images through a screen reader. Skipping it creates a barrier for anyone who cannot see the page.</dd>
+
+    <dt>Search engine optimization</dt>
+    <dd>Search engines like Google scan pages for matching words. Describing an image with alt text helps search engines understand your content and surface your page in relevant searches.</dd>
+
+    <dt>Connection issues</dt>
+    <dd>Whether someone has images turned off or is on a slow connection, alt text is what appears in place of an image that fails to load.</dd>
+  </dl>
+
+  <h2>How do you use alt text effectively?</h2>
+  <p>Not every attempt at alt text is effective. Keep these practices in mind.</p>
+
+  <ul class="practices">
+    <li>Describe what is shown in the photo itself. Avoid adding extra context the way a caption might.</li>
+    <li>Enter alt text for every image, except purely decorative ones that add nothing to the surrounding text.</li>
+    <li>Keep it concise. Aim for no more than 10 to 15 words.</li>
+    <li>Include any words that actually appear within an informative image.</li>
+  </ul>
+
+  <h2>What is expected of you?</h2>
+  <blockquote>
+    <p>The Division of Student Affairs is committed to making all of our content accessible. Do your part to uphold this commitment, and include alt text on every image you publish to the website.</p>
+    <p>If you need a refresher on the technical side of adding alt text, we are here to help.</p>
+  </blockquote>
+
+  <p><a class="btn" href="https://undergraduate.indianapolis.iu.edu/community/internal-offices/communications/index.html">Contact our office</a></p>
+
+
+  <h2>Did you know?</h2>
+  <p>You can also use alt tags on social media. Whether you are on Facebook or Flickr, most social platforms offer options to increase accessibility of your photos. <a href="https://accessibility.umn.edu/what-you-can-do/create-accessible-content/social-media">Learn about alt tags on social media</a>.</p>
+
+</main>
+
+<footer class="site">
+  Office of Communications and Digital Strategy &middot; IU Indianapolis Division of Student Affairs
+</footer>
+
+</body>
+</html>
